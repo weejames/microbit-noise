@@ -13,6 +13,7 @@ button_a_upper_bound = 500
 class NotePlayer:
     def __init__ (self, freq, duration):
         music.pitch(freq, duration)
+        sleep(50)
 
 while True:
     acc_x = accelerometer.get_x()
@@ -53,7 +54,7 @@ while True:
     
     frequency = (int(frequency / 100)) * 100
     
-    duration = 100
+    duration = 200
     
     print ('freq: ', frequency, ' duration: ', duration)
     
